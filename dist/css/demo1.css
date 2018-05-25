@@ -1,4 +1,39 @@
-#box, header {
+@charset "UTF-8";
+body, ul, li, dl, dt, dd, p, ol, h1, h2, h3, h4, h5, h6, form, img, table, fieldset, legend, menu {
+  margin: 0;
+  padding: 0; }
+
+ul, li, ol {
+  list-style: none; }
+
+img, fieldset {
+  border: 0; }
+
+img {
+  display: block; }
+
+a {
+  text-decoration: none;
+  color: #333; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 100; }
+
+body {
+  font-family: "微软雅黑";
+  font-size: 12px; }
+
+input, a {
+  outline: none; }
+
+body {
+  background: #f9f9f9; }
+
+input, li {
+  margin: 0;
+  padding: 0; }
+
+#box, header, nav {
   margin: auto;
   width: 1100px; }
 
@@ -7,4 +42,136 @@
 
 #box {
   height: 30px;
-  background: #f2f2f2; }
+  background: #f2f2f2;
+  color: #666;
+  font-size: 14px;
+  line-height: 30px; }
+  #box a {
+    display: inline-block;
+    color: #666666;
+    width: 67px; }
+  #box #box1 {
+    float: right; }
+    #box #box1 a {
+      text-align: center; }
+  #box a:hover {
+    color: red; }
+
+#nowarp-header {
+  background: white; }
+
+header {
+  height: 110px;
+  padding-top: 23px;
+  margin-bottom: 0;
+  border: 1px solid red;
+  background: white; }
+  header a {
+    display: inline-block; }
+    header a img {
+      width: 128px;
+      height: 73px; }
+  header #center {
+    width: 677px;
+    height: 60px;
+    float: right;
+    padding-top: 26px; }
+    header #center input {
+      float: left; }
+    header #center #shousuo {
+      width: 389px;
+      height: 33px;
+      border: 1px solid red; }
+    header #center #btn {
+      width: 90px;
+      height: 35px;
+      background: #f94487;
+      border: none;
+      margin-left: -6px;
+      color: white;
+      font-size: 12px; }
+    header #center #gou {
+      margin-left: 28px;
+      float: left;
+      width: 145px;
+      height: 34px;
+      color: white;
+      position: relative; }
+      header #center #gou span {
+        float: left;
+        display: inline-block;
+        width: 36px;
+        height: 34px;
+        border-right: 1px solid #333;
+        background: #f94487;
+        font-size: 16px;
+        text-align: center;
+        line-height: 34px; }
+      header #center #gou a {
+        float: left;
+        font-size: 12px;
+        display: inline-block;
+        width: 106px;
+        height: 33px;
+        text-align: center;
+        line-height: 34px;
+        color: #333333;
+        border: 1px solid #999;
+        border-left: none; }
+      header #center #gou p {
+        position: absolute;
+        float: left;
+        width: 305px;
+        height: 34px;
+        color: #333333;
+        text-align: center;
+        line-height: 34px;
+        top: 34px;
+        left: -160px;
+        font-size: 12px; }
+
+#nowarp-nav {
+  background: #FF3893; }
+
+nav {
+  margin-top: -12px;
+  height: 46px;
+  background: #ff3893; }
+  nav ul {
+    margin-left: 232px; }
+    nav ul li {
+      float: left;
+      height: 46px; }
+      nav ul li a {
+        display: inline-block;
+        color: white;
+        font-size: 16px;
+        padding-left: 30px;
+        padding-right: 30px;
+        line-height: 46px; }
+      nav ul li .xia {
+        display: none; }
+        nav ul li .xia a {
+          display: block;
+          background: white;
+          color: #333;
+          border-bottom: 1px dashed   #333333; }
+        nav ul li .xia a:hover {
+          background: #EC0971;
+          color: white; }
+    nav ul li:hover a {
+      background: #ec0971; }
+    nav ul li:hover .xia {
+      display: block; }
+    nav ul li:hover .xia a {
+      background: white; }
+    nav ul li .xia a:hover {
+      background: #EC0971; }
+
+menu {
+  width: 230px;
+  height: 645px; }
+  menu h2 {
+    height: 50px;
+    width: 100%;
+    background: #F94487; }
