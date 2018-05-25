@@ -1,0 +1,97 @@
+a {
+  text-decoration: none; }
+
+#box {
+  width: 965px;
+  height: 577px;
+  background: url(../image/dengl_img/14818105826269.jpg) no-repeat center;
+  margin: auto;
+  margin-top: 88px;
+  background-position-x: 0px;
+  position: relative; }
+
+#box3 {
+  width: 280px;
+  height: 106px;
+  margin-left: 40px;
+  margin-top: 299px;
+  float: left; }
+  #box3 #er {
+    width: 65px;
+    margin-top: 20px;
+    margin-bottom: 21px; }
+    #box3 #er img {
+      width: 65px;
+      height: 65px; }
+  #box3 .ad, #box3 .op {
+    display: inherit;
+    width: 136px;
+    height: 36px;
+    background: #ffffff;
+    text-align: center;
+    border-radius: 18px;
+    margin-left: 96px;
+    line-height: 36px;
+    color: #F450A2;
+    margin-top: 10px; }
+  #box3 .op {
+    margin-top: -100px; }
+
+#box1 {
+  width: 134px;
+  height: 76px;
+  float: left;
+  background: url(../image/dengl_img/6e9213dbef73af424807b48100a7933a745368439.png) no-repeat;
+  margin: 0; }
+
+form {
+  width: 344px;
+  height: 287px;
+  border: 1px solid #ececec;
+  float: right;
+  text-align: center;
+  line-height: 60px;
+  margin-top: 18px;
+  font-size: 12px; }
+  form h3 {
+    color: #f450a2;
+    width: 304px;
+    height: 60px;
+    margin: auto;
+    font-size: 20px; }
+  form #shou {
+    width: 302px;
+    height: 37px; }
+  form #yan {
+    width: 146px;
+    height: 37px; }
+  form #zheng {
+    width: 146px;
+    height: 39px;
+    font-size: 12px; }
+  form #deng {
+    width: 283px;
+    height: 41px;
+    font-size: 20px;
+    color: white;
+    background-color: #F450A2; }
+  form #box2 span {
+    display: inline-block;
+    float: left;
+    line-height: 36px;
+    margin-left: 24px; }
+  form #box2 a {
+    width: 24px;
+    height: 24px;
+    display: inline-block;
+    float: left;
+    margin-left: 10px; }
+
+footer {
+  width: 1423px;
+  height: 82px;
+  margin: auto;
+  text-align: center;
+  line-height: 82px; }
+  footer a {
+    color: #999; }
