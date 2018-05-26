@@ -33,7 +33,7 @@ input, li {
   margin: 0;
   padding: 0; }
 
-#box, header, nav {
+#box, header, nav, #pinpai, #biaoti, #neirong, section {
   margin: auto;
   width: 1100px; }
 
@@ -47,9 +47,10 @@ input, li {
   font-size: 14px;
   line-height: 30px; }
   #box a {
+    font-family: iconfont;
     display: inline-block;
     color: #666666;
-    width: 67px; }
+    width: 80px; }
   #box #box1 {
     float: right; }
     #box #box1 a {
@@ -59,6 +60,11 @@ input, li {
 
 #nowarp-header {
   background: white; }
+
+@font-face {
+  font-family: 'iconfont';
+  src: url("../font/iconfont.eot");
+  src: url("../font/iconfont.eot?#iefix") format("embedded-opentype"), url("../font/iconfont.woff") format("woff"), url("../font/iconfont.ttf") format("truetype"), url("../font/iconfont.svg#iconfont") format("svg"); }
 
 header {
   height: 110px;
@@ -99,6 +105,7 @@ header {
       position: relative; }
       header #center #gou span {
         float: left;
+        font-family: iconfont;
         display: inline-block;
         width: 36px;
         height: 34px;
@@ -128,16 +135,22 @@ header {
         line-height: 34px;
         top: 34px;
         left: -160px;
-        font-size: 12px; }
+        font-size: 12px;
+        display: none; }
+    header #center #gou:hover p {
+      display: block; }
 
 #nowarp-nav {
   background: #FF3893; }
 
 nav {
+  position: relative;
   margin-top: -12px;
   height: 46px;
   background: #ff3893; }
   nav ul {
+    position: absolute;
+    z-index: 1;
     margin-left: 232px; }
     nav ul li {
       float: left;
@@ -168,10 +181,292 @@ nav {
     nav ul li .xia a:hover {
       background: #EC0971; }
 
-menu {
+nav menu {
+  position: absolute;
   width: 230px;
-  height: 645px; }
-  menu h2 {
+  height: 645px;
+  z-index: 1; }
+  nav menu h2 {
+    margin-top: -2px;
     height: 50px;
     width: 100%;
-    background: #F94487; }
+    background: #F94487;
+    font-size: 16px;
+    color: #fff;
+    text-align: center;
+    line-height: 50px; }
+  nav menu dl {
+    position: relative;
+    background: white;
+    height: 74px;
+    widows: 230px;
+    border-bottom: 1px dashed   #666; }
+  nav menu dl:hover .you {
+    display: block; }
+  nav menu .you8 {
+    position: absolute;
+    bottom: 0px; }
+  nav menu .you7 {
+    position: absolute;
+    bottom: 0px; }
+  nav menu .you6 {
+    position: absolute;
+    bottom: 0px; }
+  nav menu .you5 {
+    position: absolute;
+    bottom: 0px; }
+  nav menu .you {
+    position: absolute;
+    display: none;
+    margin-left: 230px;
+    background: white;
+    width: 870px;
+    border: 1px solid #888; }
+    nav menu .you li {
+      margin-right: 20px;
+      width: 224px;
+      float: left; }
+      nav menu .you li h3 {
+        line-height: 29px;
+        margin-bottom: 20px;
+        width: 224px;
+        height: 29px;
+        border-bottom: 1px solid #333333; }
+      nav menu .you li a {
+        float: left;
+        color: #333333;
+        display: block;
+        padding: 0;
+        margin-right: 30px;
+        font-size: 12px;
+        line-height: 24px; }
+      nav menu .you li a:hover {
+        color: red; }
+    nav menu .you l {
+      float: right;
+      display: block;
+      width: 224px; }
+      nav menu .you l h3 {
+        line-height: 29px;
+        margin-bottom: 20px;
+        width: 224px;
+        height: 29px;
+        border-bottom: 1px solid #333333; }
+      nav menu .you l img {
+        margin: 5px;
+        float: left;
+        width: 90px;
+        height: 74px;
+        border: 1px solid #777; }
+  nav menu dt {
+    margin-left: 22px;
+    width: 160px;
+    font-size: 12px;
+    line-height: 24px;
+    color: #EC0971; }
+  nav menu dd {
+    width: 160px;
+    margin-left: 22px; }
+    nav menu dd a {
+      margin-right: 5px;
+      line-height: 20px;
+      font-size: 12px;
+      color: #666; }
+    nav menu dd a:hover {
+      color: red; }
+
+#nowarp-banner {
+  background: white; }
+
+#banner {
+  width: 1920px;
+  height: 480px;
+  background: white;
+  margin: auto;
+  overflow: hidden;
+  position: relative; }
+  #banner #lunbo {
+    width: 100%;
+    height: 100%;
+    z-index: 0; }
+  #banner #banner1 {
+    width: 100%;
+    height: 100%;
+    background: url(../image/bjlubo.jpg); }
+  #banner #banner2 {
+    width: 100%;
+    height: 100%;
+    background: url(../image/bjlunbo1.jpg); }
+  #banner #banner3 {
+    width: 100%;
+    height: 100%;
+    background: url(../image/bijilunbo2.jpg); }
+  #banner ul {
+    position: absolute;
+    z-index: 1;
+    width: 148px;
+    height: 20px;
+    top: 420px;
+    right: 320px; }
+    #banner ul li {
+      float: left;
+      width: 20px;
+      height: 20px;
+      background: white;
+      border-radius: 50%;
+      margin-left: 10px; }
+
+#pinpai {
+  height: 105px;
+  margin-top: 10px; }
+  #pinpai b {
+    float: left;
+    height: 105px;
+    width: 128px;
+    text-align: center;
+    display: inline-block;
+    margin-left: 240px;
+    line-height: 105px;
+    background: white; }
+  #pinpai ul {
+    width: 730px;
+    height: 105px;
+    background: white;
+    margin-left: 368px; }
+    #pinpai ul li {
+      margin-top: 10px;
+      float: left; }
+      #pinpai ul li img {
+        width: 94px;
+        height: 72px;
+        margin: 0 12px; }
+    #pinpai ul li:hover {
+      cursor: pointer; }
+
+#biaoti {
+  margin-top: 32px;
+  height: 36px;
+  margin-bottom: 20px; }
+  #biaoti h2 {
+    display: inline-block;
+    font-size: 26px;
+    line-height: 36px;
+    font-weight: 900;
+    margin-right: 16px; }
+  #biaoti span {
+    font-size: 18px;
+    color: #aaa; }
+
+#neirong {
+  height: 680px;
+  border: 1px solid #ececec;
+  border-left: none;
+  border-bottom: none;
+  background: white;
+  overflow: hidden; }
+  #neirong dl {
+    width: 218px;
+    height: 346px;
+    border: 1px solid #ececec;
+    float: left;
+    border-right: none;
+    border-top: none;
+    background: white; }
+    #neirong dl dt {
+      width: 218px;
+      height: 219px; }
+      #neirong dl dt img {
+        width: 100%;
+        height: 100%; }
+    #neirong dl dd {
+      width: 100%;
+      height: 125px;
+      padding-left: 14px;
+      padding-right: 14px;
+      font-size: 12px; }
+      #neirong dl dd h4 {
+        line-height: 24px; }
+      #neirong dl dd h4:hover {
+        color: #F450A2; }
+      #neirong dl dd .oi {
+        color: #999; }
+      #neirong dl dd div {
+        margin-top: 24px; }
+        #neirong dl dd div span {
+          display: inline-block; }
+        #neirong dl dd div .nw {
+          color: red;
+          line-height: 26px; }
+          #neirong dl dd div .nw em {
+            font-size: 16px; }
+        #neirong dl dd div a {
+          display: inline-block;
+          color: white;
+          width: 66px;
+          height: 26px;
+          text-align: center;
+          line-height: 26px;
+          background: red;
+          opacity: .6;
+          border-radius: 13px;
+          margin-left: 20px; }
+        #neirong dl dd div .ne {
+          margin-right: 30px;
+          color: #999999; }
+          #neirong dl dd div .ne i {
+            text-decoration: line-through; }
+        #neirong dl dd div .ol {
+          display: inline-block;
+          color: #999999; }
+  #neirong dl:hover {
+    cursor: pointer; }
+
+#scetion {
+  height: 360px;
+  padding: 5px;
+  background: white;
+  border: #aaa;
+  margin-bottom: 20px; }
+  #scetion img {
+    float: left;
+    width: 750px;
+    height: 350px; }
+  #scetion img:hover {
+    cursor: pointer; }
+  #scetion aside {
+    margin-left: 20px;
+    float: left;
+    width: 306px;
+    height: 350px; }
+    #scetion aside li {
+      display: inline-block;
+      width: 276px;
+      height: 81px;
+      padding: 18px 15px;
+      overflow: hidden; }
+      #scetion aside li img {
+        float: left;
+        width: 76px;
+        height: 76px;
+        border: 1px solid #ECECEC; }
+      #scetion aside li div {
+        float: right;
+        width: 184px;
+        height: 81px;
+        margin-left: 10px;
+        color: #404040; }
+        #scetion aside li div p {
+          width: 184px;
+          height: 44px;
+          line-height: 22px;
+          margin-bottom: 12px; }
+        #scetion aside li div span {
+          display: inline-block;
+          font-size: 16px;
+          color: red; }
+        #scetion aside li div i {
+          text-decoration: line-through; }
+    #scetion aside li:hover {
+      cursor: pointer; }
+    #scetion aside li:hover p {
+      color: red; }
