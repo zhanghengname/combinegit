@@ -1,0 +1,345 @@
+body,ul,li,dl,dt,dd,p,ol,h1,h2,h3,h4,h5,h6,form,img,table,fieldset,legend,menu{margin:0; padding:0;}
+ul,li,ol{list-style:none;}
+img,fieldset{border:0; }
+img{display:block;}
+a{text-decoration:none; color:#333;}
+h1,h2,h3,h4,h5,h6{font-weight:100;}
+body{ font-family:"微软雅黑";font-size: 12px;}
+input,a{outline:none;}
+
+$width:1000px;
+body{
+    background:#f9f9f9 ;
+}
+input,li{margin: 0;padding: 0;}
+#box,header,nav,,footer,#pinpai{margin: auto;width: $width;}
+#nowarp-box{
+    background: #F2F2F2;
+}
+#box{
+    height: 30px;
+    background: #f2f2f2;
+    color: #666;
+    font-size:14px ;
+    line-height: 30px;
+    a{
+        font-family: iconfont;
+      display: inline-block;
+      color: #666666;
+      width: 80px;
+    }
+    #box1{
+        float: right;
+        a{
+            text-align: center;
+        }
+    }
+    a:hover{
+        color: red;
+    }
+}
+#nowarp-header{
+    background: white;
+}
+@font-face {
+  font-family: 'iconfont';
+  src: url('../font/iconfont.eot');
+  src: url('../font/iconfont.eot?#iefix') format('embedded-opentype'),
+  url('../font/iconfont.woff') format('woff'),
+  url('../font/iconfont.ttf') format('truetype'),
+  url('../font/iconfont.svg#iconfont') format('svg');
+}
+header{
+    height: 110px;
+    padding-top:23px ;
+    margin-bottom:0 ;
+    //border: 1px solid red;
+    background: white;
+    overflow: hidden;
+    a{
+        display: inline-block;
+        img{
+            width: 128px;
+            height: 73px;
+        }
+    }
+    //搜索框
+    #center{
+        width: 677px;
+        height: 60px;
+//      border: 1px solid red;
+        float: right;
+        padding-top:26px ;
+        input{
+            float: left;
+        }
+        #shousuo{
+            width: 389px;
+            height: 33px;
+            border: 1px solid red;
+            
+        }
+        #btn{
+            width: 90px;
+            height: 35px;
+            background: #f94487;
+            border: none;
+            margin-left:-6px ;
+            color: white;
+            font-size: 12px;
+            
+        }
+        //购物车
+        #gou{
+            margin-left:28px ;
+            float: left;
+            width: 145px;
+            height: 34px;
+            color: white;
+            position: relative;
+            span{float: left;
+            font-family: iconfont;
+                display: inline-block;
+                width: 36px;
+                height: 34px;
+                border-right: 1px solid #333;
+                background: #f94487;
+                font-size: 16px;
+                 text-align: center;
+                line-height: 34px;
+            }
+            a{
+                float: left;
+                font-size: 12px;
+                display: inline-block;
+                width: 106px;
+                height: 33px;
+                text-align: center;
+                line-height: 34px;
+                color: #333333;
+                border: 1px solid #999;
+                border-left: none;
+            }
+            p{
+                position: absolute;
+                float:left ;
+                width: 305px;
+                height: 34px;
+                color: #333333;
+                text-align: center;
+                line-height: 34px;
+                top: 34px;
+                left: -160px;
+                font-size:12px ;
+                display: none;
+            }
+        }
+        #gou:hover p{display: block;}
+//      #gou:hover {
+//          border: 1px solid red;
+//      }
+    }
+}
+#nowarp-nav{
+    background: #FF3893;
+}
+
+nav{
+    position: relative;
+    margin-top:-12px ;
+    height: 46px;
+    background: #ff3893;
+    ul{
+        position: absolute;
+        z-index: 1;
+        margin-left: 232px;
+        
+        li{         
+            float: left;
+            height: 46px;
+//          position: relative;
+            a{
+                display: inline-block;
+                color: white;
+                font-size: 16px;
+                padding-left:30px;
+                padding-right:30px;
+                line-height: 46px;
+            }
+              
+            .xia{
+                
+              display: none;
+                a{
+                    display: block;
+                    background: white;
+                    color: #333;
+                    border-bottom: 1px dashed   #333333;
+                }
+              a:hover{
+                  background:#EC0971 ;
+                  color: white;
+              }
+            }
+        }
+        li:hover a{
+            background: #ec0971;
+        }
+        li:hover .xia{
+            display: block;
+        }
+        li:hover .xia a{
+            background:white ;
+        }
+        li .xia a:hover{
+            background: #EC0971;
+        }
+    }
+}
+//导航
+nav{
+// h2:hover dl{
+//      display: block;
+//  }
+    menu{
+        position: absolute;
+        width: 230px;
+        height: 645px;
+        z-index: 1;
+        
+    //  left: 0;
+    //  top: 0;
+        h2{
+            margin-top: -2px;
+            height: 50px;
+            width: 100%;
+            background: #F94487;
+            font-size:16px ;
+            color:#fff;
+            text-align: center;
+            line-height: 50px;
+        }
+        dl{
+            position: relative;
+            background: white;
+            height: 74px;
+            widows: 230px;
+            border-bottom:1px dashed   #666 ;
+            display: none;
+        }
+//      menu:hover>dl{
+//          display: block;
+//      }
+        dl:hover .you{
+            display: block;
+        }
+        .you1{
+            position: absolute;
+            top: 0;
+        }
+        .you2{
+            position: absolute;
+            top: 0;
+        }
+        .you3{
+            position: absolute;
+            top: 0;
+        }
+        .you4{
+            position: absolute;
+            top: 0;
+        }
+        .you8{
+                position: absolute;
+                bottom: 0px;
+            }
+            .you7{
+                position: absolute;
+                bottom: 0px;
+            }
+            .you6{
+                position: absolute;
+                bottom: 0px;
+            }
+            .you5{
+                position: absolute;
+                bottom: 0px;
+            }
+            //弹出表
+        .you{
+                position: absolute;
+                
+                display: none;
+                margin-left: 230px;
+                background: white;
+                width: 870px;
+                //border: 1px solid #888;
+                li{
+                    margin-right: 20px;
+                    width: 224px;
+                     
+                    float: left;
+                    h3{
+                        line-height: 29px;
+                        margin-bottom: 20px;
+                        width: 224px;
+                        height: 29px;
+                        border-bottom: 1px solid #333333;
+                    }
+                    a{
+                        float: left;
+                        color: #333333;
+                        display:block;
+                        padding: 0;
+                        margin-right: 30px;
+                        font-size:12px;
+                        line-height: 24px;
+                    }
+                    a:hover{
+                        color: red;
+                    }
+                }
+                l{
+                    float: right;
+                    display: block;
+                    width: 224px;
+                    h3{
+                        line-height: 29px;
+                        margin-bottom: 20px;
+                        width: 224px;
+                        height: 29px;
+                        border-bottom: 1px solid #333333;
+                    }
+                    img{
+
+                        margin: 5px;
+                        float: left;
+                        width: 90px;
+                        height: 74px;
+                        border: 1px solid #777;
+                    }
+                }
+            }
+        dt{
+            margin-left: 22px;
+            width: 160px;
+            font-size: 12px;
+            line-height: 24px;
+            color: #EC0971; 
+        }
+        dd{
+            width: 160px;
+            margin-left: 22px;
+            
+            a{
+                margin-right: 5px;
+                line-height: 20px;
+                font-size: 12px;
+                color: #666;
+            }
+            a:hover{color: red;}
+        }
+        
+        
+    }
+}
