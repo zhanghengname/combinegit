@@ -326,68 +326,86 @@ nav{
 body{
     position: relative;
 }
-#banner{
-    
-    width: 100%;
-    height: 480px;
-    background: white;
-    margin:0 auto;
-    overflow: hidden;
-    position: relative;
-    #lunbo{
-        margin: auto;
-        //width: 100%;
-        max-width: 1942px;
-        height: 100%;
-        z-index: 0;
-        position: relative;
+
+///////////////////l轮播图
+//#banner{
+//  
+//  width: 100%;
+//  height: 480px;
+//  background: white;
+//  margin:0 auto;
+//  overflow: hidden;
+//  position: relative;
+//  #lunbo{
+//      margin: auto;
+//      //width: 100%;
+//      max-width: 1942px;
+//      height: 100%;
+//      z-index: 0;
+//      position: relative;
+//      
+//      ul{
+//          position: absolute;
+//          z-index: 5;
+//          width: 148px;
+//          height: 20px;
+//          top: 420px;
+//          right: 320px;
+//          //background: rgba(255 255 255 0.3);
+//          z-index: 1;
+//          li{
+//              float: left;
+//              width: 20px;
+//              height: 20px;
+//              background:white;
+//              border-radius: 50%;
+//              margin-left: 10px;
+//          }
+//      }
+//  }
+//  #banner1{
+//      position: absolute;
+//      width:100% ;
+//      height: 100%;
+//      background: url(../image/bjlubo.jpg) no-repeat;
+//      //background-position:50% 50%;
+//      display: none;
+//  }
+//  #banner2{
+//      position: absolute;
+//      
+//      width:100% ;
+//      height: 100%;
+//      background: url(../image/bjlunbo1.jpg) no-repeat;
+//      display: none;
+//      
+//      //background-position:50% 50%;
+//  }
+//  #banner3{
+//      position: absolute;
+//      width:100% ;
+//      height: 100%;
+//      background: url(../image/bijilunbo2.jpg) no-repeat;
+//      display: none;
+//      //background-position:50% 50%;
+//  }
+//  
+//}
+img{border:0;display:block;}
+a{outline:none;text-decoration:none;}
+.pointer{height:4px;position:absolute;bottom:0px;}
+.pointer li{width:42px;height:1px;background:#5a5a5a;float:left;margin:0 5px;cursor: pointer;}
+.pointer li.now{height:4px;background:#c8c8c8;}
+.cut{background:#bdbdbd;position:absolute;font-family:'宋体';color:#fff;text-align:center;cursor:pointer;opacity:0.2;}
+.J_banner{max-width:100%;height:480px; position:relative;overflow:hidden;margin:0 auto 10px;}
+.J_banner .img{width:1900px;height: 480px; overflow:hidden;position:absolute;top:0;left:0;}
+.J_banner .img li{float:left;position:relative;}
+.J_banner1 .pointer{width:200px;height:15px;position:absolute;bottom:16px;left:50%;}
+.J_banner1 .pointer li{width:15px;height:15px;background:#d0d0d0;border-radius:50%;margin:0 5px;float:left;}
+.J_banner1 .pointer li.now{background:#fff;}
+.J_banner .cut{width:34px;height:58px;left:20px;font-size:18px;line-height:58px;}
+.J_banner .cut.next{left:auto;right:20px;}
         
-        ul{
-            position: absolute;
-            z-index: 5;
-            width: 148px;
-            height: 20px;
-            top: 420px;
-            right: 320px;
-            //background: rgba(255 255 255 0.3);
-            z-index: 1;
-            li{
-                float: left;
-                width: 20px;
-                height: 20px;
-                background:white;
-                border-radius: 50%;
-                margin-left: 10px;
-            }
-        }
-    }
-    #banner1{
-        position: absolute;
-        width:100% ;
-        height: 100%;
-        background: url(../image/bjlubo.jpg) no-repeat;
-        //background-position:50% 50%;
-        display: none;
-    }
-    #banner2{
-        position: absolute;
-        width:100% ;
-        height: 100%;
-        background: url(../image/bjlunbo1.jpg) no-repeat;
-        display: none;
-        
-        //background-position:50% 50%;
-    }
-    #banner3{
-        position: absolute;
-        width:100% ;
-        height: 100%;
-        background: url(../image/bijilunbo2.jpg) no-repeat;
-        display: none;
-        //background-position:50% 50%;
-    }
-    
-}
 
 
 #pinpai{
@@ -860,6 +878,9 @@ footer{
         font-size: 20px;
     }
 }
+
+//左右两边弹出框
+
 #flat_rght{
     
     font-family:iconfont;
