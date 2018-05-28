@@ -439,7 +439,7 @@
 		</div>
 		<!--轮播图-->
 		<div id="nowarp-banner">
-			<div id="banner">
+			<!--<div id="banner">
 				<div id="lunbo">
 					<div id="banner1"></div>
 					<div id="banner2"></div>
@@ -451,7 +451,23 @@
 					</ul>
 				</div>
 				
-			</div>
+			</div>-->
+			<div class="J_banner J_banner1">
+		        <ul class="img">
+		            <li>
+		                <img src="../image/bjlubo.jpg" alt="">
+		            </li>
+		            <li>
+		                <img src="../image/bjlunbo1.jpg" alt="">
+		            </li>
+		            <li>
+		                <img src="../image/bijilunbo2.jpg" alt="">
+		            </li>
+		        </ul>
+		        <ul class="pointer"></ul><!-- 点 -->
+		        <a class="cut prev"><</a><!-- 上一张 -->
+		        <a class="cut next">></a><!-- 下一张 -->
+		    </div>
 		</div>
 		
 		<!--品牌热卖-->
@@ -1296,6 +1312,7 @@
 				<span><b>&#xe639;</b>购物车</span>
 				<span><b>&#xe671;</b>质询</span>
 				<span class="flat_span"><b>&#xe62c;</b>微信<a>关注蜜芽抢福利<img src="image/dengl_img/d007602602b2889dca7a8b7dbd43cb3a963181367.png"/></a></span>
+				<!--<span class="flat_span1">Top</span>-->
 			</div>
 			<div id="flat_left">
 				<div>
@@ -1306,5 +1323,21 @@
 			</div>
 		</div>
 	</body>
+	<script>
+    	$(function(){
+
+	        var myApi1 = new Myapi();
+	        myApi1.JSON.lagout($('.J_banner1'),2000,0);
+	
+	        var myApi2 = new Myapi();
+	        myApi2.JSON.lagout($('.J_banner2'),1000,10);
+	
+	        var myApi3 = new Myapi();
+	        myApi3.JSON.lagout($('.J_banner3'),3000,20);
+	
+	    })
+	</script>
 	<script type="text/javascript" src="js/demo1.js" ></script>
+	<script type="text/javascript" src="js/Myapi.js"></script>
+	
 </html>

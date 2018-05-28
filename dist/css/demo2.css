@@ -33,9 +33,9 @@ input, li {
   margin: 0;
   padding: 0; }
 
-#box, header, nav, #pinpai, #biaoti, #neirong, section, #hout, footer {
+#box, header, nav, footer, #pinpai {
   margin: auto;
-  width: 1100px; }
+  width: 1000px; }
 
 #nowarp-box {
   background: #F2F2F2; }
@@ -200,9 +200,22 @@ nav menu {
     background: white;
     height: 74px;
     widows: 230px;
-    border-bottom: 1px dashed   #666; }
+    border-bottom: 1px dashed   #666;
+    display: none; }
   nav menu dl:hover .you {
     display: block; }
+  nav menu .you1 {
+    position: absolute;
+    top: 0; }
+  nav menu .you2 {
+    position: absolute;
+    top: 0; }
+  nav menu .you3 {
+    position: absolute;
+    top: 0; }
+  nav menu .you4 {
+    position: absolute;
+    top: 0; }
   nav menu .you8 {
     position: absolute;
     bottom: 0px; }
@@ -274,334 +287,145 @@ nav menu {
     nav menu dd a:hover {
       color: red; }
 
-#nowarp-banner {
-  background: white; }
+#liebanner {
+  width: 100%;
+  height: 343px;
+  background: url(../image/imglibiao/liebiaobanner.jpg) no-repeat center; }
+
+#pinpai {
+  height: 109px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background: white;
+  position: relative;
+  padding: 15px; }
+  #pinpai #pinpai_lfet {
+    display: inline-block;
+    position: absolute;
+    left: 20px;
+    top: 20px; }
+  #pinpai ul {
+    margin: auto;
+    width: 760px;
+    height: 105px; }
+    #pinpai ul li {
+      border: 1px solid #ECECEC;
+      float: left; }
+      #pinpai ul li img {
+        width: 106px;
+        height: 52px; }
+    #pinpai ul li:hover {
+      cursor: pointer; }
+  #pinpai #pinpai_right {
+    float: right;
+    display: inline-block;
+    position: absolute;
+    top: 20px;
+    right: 30px; }
+    #pinpai #pinpai_right a {
+      display: inline-block;
+      width: 56px;
+      height: 24px;
+      border: 1px solid #ECECEC;
+      text-align: center;
+      line-height: 24px; }
 
 body {
   position: relative; }
 
-img {
-  border: 0;
-  display: block; }
-
-a {
-  outline: none;
-  text-decoration: none; }
-
-.pointer {
-  height: 4px;
-  position: absolute;
-  bottom: 0px; }
-
-.pointer li {
-  width: 42px;
-  height: 1px;
-  background: #5a5a5a;
-  float: left;
-  margin: 0 5px;
-  cursor: pointer; }
-
-.pointer li.now {
-  height: 4px;
-  background: #c8c8c8; }
-
-.cut {
-  background: #bdbdbd;
-  position: absolute;
-  font-family: '宋体';
-  color: #fff;
-  text-align: center;
-  cursor: pointer;
-  opacity: 0.2; }
-
-.J_banner {
-  max-width: 100%;
-  height: 480px;
-  position: relative;
-  overflow: hidden;
-  margin: 0 auto 10px; }
-
-.J_banner .img {
-  width: 1900px;
-  height: 480px;
-  overflow: hidden;
-  position: absolute;
+#shuliang {
   top: 0;
-  left: 0; }
-
-.J_banner .img li {
-  float: left;
-  position: relative; }
-
-.J_banner1 .pointer {
-  width: 200px;
-  height: 15px;
-  position: absolute;
-  bottom: 16px;
-  left: 50%; }
-
-.J_banner1 .pointer li {
-  width: 15px;
-  height: 15px;
-  background: #d0d0d0;
-  border-radius: 50%;
-  margin: 0 5px;
-  float: left; }
-
-.J_banner1 .pointer li.now {
-  background: #fff; }
-
-.J_banner .cut {
-  width: 34px;
-  height: 58px;
-  left: 20px;
-  font-size: 18px;
-  line-height: 58px; }
-
-.J_banner .cut.next {
-  left: auto;
-  right: 20px; }
-
-#pinpai {
-  height: 105px;
-  margin-top: 10px; }
-  #pinpai b {
-    float: left;
-    height: 105px;
-    width: 128px;
-    text-align: center;
-    display: inline-block;
-    margin-left: 240px;
-    line-height: 105px;
-    background: white; }
-  #pinpai ul {
-    width: 730px;
-    height: 105px;
-    background: white;
-    margin-left: 368px; }
-    #pinpai ul li {
-      margin-top: 10px;
-      float: left; }
-      #pinpai ul li img {
-        width: 94px;
-        height: 72px;
-        margin: 0 12px; }
-    #pinpai ul li:hover {
-      cursor: pointer; }
-
-#biaoti {
-  margin-top: 32px;
-  height: 36px;
-  margin-bottom: 20px; }
-  #biaoti h2 {
-    display: inline-block;
-    font-size: 26px;
-    line-height: 36px;
-    font-weight: 900;
-    margin-right: 16px; }
-  #biaoti span {
-    font-size: 18px;
-    color: #aaa; }
-
-#neirong {
-  height: 680px;
-  border: 1px solid #ececec;
-  border-left: none;
-  border-bottom: none;
+  left: 0;
+  right: 0;
+  width: 988px;
+  height: 42px;
+  padding: 12px;
+  margin: auto;
+  font-size: 12px;
+  line-height: 42px;
   background: white;
-  overflow: hidden; }
-  #neirong dl {
-    width: 218px;
-    height: 346px;
-    border: 1px solid #ececec;
-    float: left;
-    border-right: none;
-    border-top: none;
-    background: white; }
-    #neirong dl dt {
-      width: 218px;
-      height: 219px; }
-      #neirong dl dt img {
-        width: 100%;
-        height: 100%; }
-    #neirong dl dd {
-      width: 100%;
-      height: 125px;
-      padding-left: 14px;
-      padding-right: 14px;
-      font-size: 12px; }
-      #neirong dl dd h4 {
-        line-height: 24px; }
-      #neirong dl dd h4:hover {
-        color: #F450A2; }
-      #neirong dl dd .oi {
-        color: #999; }
-      #neirong dl dd div {
-        margin-top: 24px; }
-        #neirong dl dd div span {
-          display: inline-block; }
-        #neirong dl dd div .nw {
-          color: red;
-          line-height: 26px; }
-          #neirong dl dd div .nw em {
-            font-size: 16px; }
-        #neirong dl dd div a {
-          display: inline-block;
-          color: white;
-          width: 66px;
-          height: 26px;
-          text-align: center;
-          line-height: 26px;
-          background: red;
-          opacity: .6;
-          border-radius: 13px;
-          margin-left: 20px; }
-        #neirong dl dd div .ne {
-          margin-right: 30px;
-          color: #999999; }
-          #neirong dl dd div .ne i {
-            text-decoration: line-through; }
-        #neirong dl dd div .ol {
-          display: inline-block;
-          color: #999999; }
-  #neirong dl:hover {
-    cursor: pointer; }
-
-#scetion {
-  height: 360px;
-  padding: 5px;
-  background: white;
-  border: #aaa;
   margin-bottom: 20px; }
-  #scetion img {
-    float: left;
-    width: 750px;
-    height: 350px; }
-  #scetion img:hover {
-    cursor: pointer; }
-  #scetion aside {
-    margin-left: 20px;
-    float: left;
-    width: 306px;
-    height: 350px; }
-    #scetion aside li {
-      display: inline-block;
-      width: 276px;
-      height: 81px;
-      padding: 18px 15px;
-      overflow: hidden; }
-      #scetion aside li img {
-        float: left;
-        width: 76px;
-        height: 76px;
-        border: 1px solid #ECECEC; }
-      #scetion aside li div {
-        float: right;
-        width: 184px;
-        height: 81px;
-        margin-left: 10px;
-        color: #404040; }
-        #scetion aside li div p {
-          width: 184px;
-          height: 44px;
-          line-height: 22px;
-          margin-bottom: 12px; }
-        #scetion aside li div span {
-          display: inline-block;
-          font-size: 16px;
-          color: red; }
-        #scetion aside li div i {
-          text-decoration: line-through; }
-    #scetion aside li:hover {
-      cursor: pointer; }
-    #scetion aside li:hover p {
+  #shuliang .shuliang_span {
+    display: inline-block; }
+  #shuliang .shuliang2, #shuliang .shuliang3 {
+    width: 54px;
+    border: 1px solid #ECECEC; }
+  #shuliang .shuliang1 {
+    width: 76px;
+    background: #ff69b4;
+    color: white; }
+  #shuliang .shuliang_div {
+    display: inline-block;
+    margin-left: 40px; }
+  #shuliang .shuliang4 {
+    float: right; }
+    #shuliang .shuliang4 span {
       color: red; }
+  #shuliang a {
+    display: inline-block;
+    text-align: center; }
 
-#hout {
-  height: 420px;
-  background: white;
-  border: 1px solid #999999;
-  margin-bottom: 20px; }
-  #hout .hout1 {
-    width: 1062px;
-    height: 80px;
-    padding: 19px; }
-    #hout .hout1 img {
-      float: left;
+#dazhanshi {
+  display: flex;
+  flex-wrap: wrap;
+  width: 1000px;
+  margin: auto;
+  border: 1px solid #ececec;
+  border-bottom: none;
+  border-right: none;
+  background: white; }
+  #dazhanshi #zhanshi {
+    width: 24.9%;
+    height: 365px;
+    border-bottom: 1px solid #ECECEC;
+    border-right: 1px solid #ECECEC; }
+    #dazhanshi #zhanshi img {
+      width: 248px;
+      height: 228px; }
+    #dazhanshi #zhanshi .zhnashi_l {
       display: inline-block;
-      width: 78px;
-      height: 78px;
-      border: 1px solid #E9E9E9;
-      margin-right: 15px; }
-    #hout .hout1 span {
-      display: inline-block; }
-    #hout .hout1 .hout_span {
-      float: left;
-      font-size: 18px;
-      line-height: 80px; }
-    #hout .hout1 .hout_span1 {
-      width: 164px;
-      height: 40px;
-      margin-top: 20px;
-      border: 1px solid #A71D5D;
-      color: #ff0000;
-      text-align: center;
-      line-height: 40px;
-      font-size: 12px;
-      float: right;
-      border-radius: 20px; }
-  #hout .hout2 {
-    width: 196px;
-    position: relative;
-    float: left;
-    margin-left: 12px;
-    margin-right: 10px; }
-    #hout .hout2 li img {
-      width: 196px;
-      height: 196px; }
-    #hout .hout2 span {
-      display: inline-block; }
-    #hout .hout2 .hout2_span {
-      width: 88px;
-      height: 26px;
-      font-size: 12px;
-      text-align: center;
-      line-height: 26px;
-      border: 1px solid #FF3893;
-      border-radius: 13px;
-      position: absolute;
-      left: 54px;
-      top: 160px;
-      background-color: rgba(255, 255, 255, 0.5); }
-    #hout .hout2 p {
-      height: 48px;
-      font-size: 12px;
-      line-height: 20px; }
-    #hout .hout2 .hout2_span2 {
-      width: 196px;
-      height: 36px;
-      font-size: 16px;
-      color: red;
-      line-height: 36px; }
-      #hout .hout2 .hout2_span2 i {
+      width: 229px;
+      height: 25px;
+      margin-left: 18px; }
+    #dazhanshi #zhanshi .zhanshi_span {
+      display: inline-block;
+      width: 229px;
+      height: 29px;
+      margin-left: 18px; }
+      #dazhanshi #zhanshi .zhanshi_span b {
+        font-size: 24px;
+        color: #FF5053;
+        margin-right: 8px;
+        line-height: 29px; }
+      #dazhanshi #zhanshi .zhanshi_span i {
         color: #888888;
-        text-decoration: line-through; }
+        text-decoration: line-through;
+        line-height: 15px;
+        font-size: 12px; }
+    #dazhanshi #zhanshi .zhanshi_p {
+      width: 209px;
+      height: 40px;
+      font-size: 12px;
+      line-height: 24px;
+      margin: auto; }
+    #dazhanshi #zhanshi .zhanshi_p:hover {
+      color: #FF69B4; }
 
 #nowarp_footer {
-  background: white; }
+  background: white;
+  position: relative; }
 
 footer {
   height: 522px;
   background: white; }
   footer #footer1 {
-    width: 1050px;
-    margin-left: 50px;
+    width: 1000px;
     height: 118px;
     border-bottom: 1px solid #ECECEC;
     padding-top: 20px; }
     footer #footer1 li {
       float: left;
-      width: 167px;
+      width: 160px;
       height: 102px; }
       footer #footer1 li img {
         width: 60px;
@@ -620,9 +444,8 @@ footer {
       cursor: pointer; }
   footer #footer2 {
     width: 1000px;
-    height: 170px;
+    height: 180px;
     padding-top: 17px;
-    margin-left: 50px;
     border-bottom: 1px solid #ECECEC;
     font-size: 12px;
     margin-bottom: 15px; }
@@ -635,7 +458,7 @@ footer {
         margin-bottom: 10px; }
       footer #footer2 li a {
         display: block;
-        line-height: 27px;
+        line-height: 25px;
         color: #666666; }
     footer #footer2 .footer_li {
       width: 200px;
@@ -666,7 +489,6 @@ footer {
         display: block;
         cursor: pointer; }
   footer #footer3 {
-    margin-left: 50px;
     width: 1000px; }
     footer #footer3 ul {
       width: 700px;
@@ -701,39 +523,14 @@ footer {
       footer #footer3 #di img:hover {
         cursor: pointer; }
 
-#flat {
-  display: none; }
-
-#flat_left {
-  position: fixed;
-  top: 200px;
-  left: 50px;
-  width: 80px;
-  height: 248px;
-  background: white;
-  padding-left: 10px;
-  padding-right: 10px; }
-  #flat_left div {
-    width: 80px;
-    height: 80px;
-    text-align: center;
-    color: mediumvioletred;
-    font-size: 30px; }
-  #flat_left img {
-    margin-top: 10px;
-    width: 80px;
-    height: 80px; }
-  #flat_left span {
-    color: red;
-    font-size: 20px; }
-
 #flat_rght {
   font-family: iconfont;
   position: fixed;
   top: 200px;
   right: 100px;
   width: 56px;
-  height: 170px; }
+  height: 170px;
+  display: none; }
   #flat_rght span {
     height: 52px;
     display: block;
@@ -758,5 +555,11 @@ footer {
   #flat_rght .flat_span img {
     width: 60px;
     height: 60px; }
+  #flat_rght #flat_span1 {
+    line-height: 52px;
+    background: red;
+    color: white;
+    font-size: 20px;
+    font-weight: 900; }
   #flat_rght .flat_span:hover a {
     display: block; }
