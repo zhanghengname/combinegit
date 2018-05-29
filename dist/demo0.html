@@ -5,7 +5,7 @@
 		<script type="text/javascript" src="js/jquery-1.11.0.js"></script>
 		<script type="text/javascript" src="js/demo.js"></script>
 		<link rel="stylesheet" type="text/css" href="css/demo.css"/>
-		<title>登陆</title>
+		<title>注册</title>
 	</head>
 	<body>
 		<div id="box">
@@ -19,7 +19,7 @@
 				<a href="" class="ad">Android</a>
 			</div>
 			<form action="post" method="post">
-				<h3>快捷登录</h3>
+				<h3>快捷注册</h3>
 				<!--<input type="text" id="yong"placeholder="请输入用户名" />-->
 				<input type="text" name="shou" id="shou" placeholder="请输入手机号码" />
 				
@@ -41,19 +41,17 @@
 	</body>
 	<script type="text/javascript">
 		var a=10;
-		console.log(a);
-		
+		//console.log(a);
 		var $deng=$("#deng");
-		
-		
 		$(function(){
 			$("#deng").click(function(){
-				$.post("http://h6.duchengjiu.top/shop/api_user.php",{"status":"login","username":$("#shou").val(),"password":$("#yan").val},function(data){
+				$.post("http://h6.duchengjiu.top/shop/api_user.php",{"status":"register","username":$("#shou").val(),"password":$("#yan").val},function(data){
 					//console.log(data);
 					if(data.code==0){
-						window.location.href="demo1.html";
+						window.location.href="demo.html";
 					}
 				});
+				
 			});
 			
 		});
