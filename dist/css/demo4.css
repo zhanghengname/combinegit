@@ -286,3 +286,264 @@ nav menu {
       color: #666; }
     nav menu dd a:hover {
       color: red; }
+
+#xiang_xi {
+  width: 1100px;
+  height: 50px;
+  margin: auto;
+  background: white;
+  line-height: 50px; }
+  #xiang_xi .xiang_a {
+    margin-right: 5px;
+    font-size: 12px; }
+  #xiang_xi .xiang_a:hover {
+    color: #FF0000;
+    cursor: pointer; }
+
+body {
+  background: white; }
+
+#xiang_tuo {
+  width: 1060px;
+  height: 566px;
+  margin: auto;
+  padding: 20px;
+  position: relative; }
+
+#tuox_left {
+  position: relative;
+  float: left;
+  width: 400px;
+  height: 560px; }
+  #tuox_left #tuox_left11 {
+    position: absolute;
+    width: 403px;
+    height: 403px;
+    border: 1px solid red; }
+    #tuox_left #tuox_left11 img {
+      width: 400px;
+      height: 400px;
+      border: 1px solid #ECECEC; }
+
+#tuox_left111 {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background: yellow;
+  opacity: .5;
+  cursor: move; }
+
+#tuox_left1 {
+  width: 400px;
+  height: 400px;
+  position: absolute;
+  display: none;
+  top: 0;
+  left: 405px;
+  overflow: hidden; }
+  #tuox_left1 img {
+    position: absolute;
+    width: 800px;
+    height: 800px; }
+
+#tuox_left2 {
+  position: absolute;
+  top: 405px;
+  height: 160px;
+  width: 400px; }
+  #tuox_left2 img {
+    width: 160px;
+    height: 160px;
+    border: 1px solid #ECECEC; }
+
+.tuo_right1, .tuo_right2, .tuo_right3, .tuo_right4, .tuo_right5, .tuo_right6, .tuo_right7, .tuo_right8, .tuo_right9, .tuo_right10 {
+  width: 600px; }
+
+#tuo_right {
+  margin-left: 50px;
+  float: left;
+  width: 600px;
+  height: 536px;
+  font-size: 12px; }
+  #tuo_right .tuo_right1 {
+    width: 600px;
+    height: 20px;
+    margin-bottom: 10px;
+    color: #999;
+    line-height: 20px; }
+    #tuo_right .tuo_right1 a {
+      float: right;
+      display: inline-block; }
+      #tuo_right .tuo_right1 a img {
+        display: inline-block;
+        width: 20px;
+        height: 20px; }
+  #tuo_right .tuo_right2 {
+    width: 560px;
+    height: 48px;
+    margin-bottom: 10px;
+    padding-right: 40px;
+    font-size: 18px;
+    line-height: 24px;
+    color: #444; }
+    #tuo_right .tuo_right2 .tuo_rightspan {
+      color: red; }
+  #tuo_right .tuo_right3 {
+    height: 20px;
+    margin-bottom: 10px; }
+  #tuo_right .tuo_right4 {
+    width: 570px;
+    height: 27px;
+    padding: 15px 10px;
+    font-size: 16px;
+    background: #FFECEC; }
+    #tuo_right .tuo_right4 span {
+      margin-right: 20px; }
+    #tuo_right .tuo_right4 b {
+      color: palevioletred;
+      margin-right: 10px; }
+    #tuo_right .tuo_right4 i {
+      text-decoration: line-through;
+      font-size: 12px;
+      color: #888;
+      margin-right: 10px; }
+  #tuo_right .tuo_right5 {
+    height: 55px;
+    padding-top: 12px; }
+    #tuo_right .tuo_right5 span {
+      display: inline-block;
+      width: 63px;
+      height: 40px;
+      text-align: center;
+      border: 1px solid red; }
+    #tuo_right .tuo_right5 .tuo_rightspan2 {
+      font-size: 18px;
+      border: none; }
+  #tuo_right .tuo_right6 {
+    height: 58px;
+    padding-top: 10px; }
+    #tuo_right .tuo_right6 span {
+      width: 63px;
+      height: 58px;
+      text-align: center;
+      display: inline-block;
+      font-size: 18px;
+      float: left; }
+    #tuo_right .tuo_right6 a {
+      display: inline-block;
+      border: 1px solid red; }
+  #tuo_right .tuo_right7 {
+    height: 30px;
+    padding: 16px 0;
+    font-size: 18px; }
+    #tuo_right .tuo_right7 #tuo_right7 {
+      width: 40px;
+      height: 20px;
+      margin-left: 40px; }
+    #tuo_right .tuo_right7 span {
+      margin-left: 15px; }
+  #tuo_right .tuo_right8 {
+    height: 40px; }
+    #tuo_right .tuo_right8 span {
+      margin-left: 15px; }
+    #tuo_right .tuo_right8 .span120 {
+      font-size: 18px;
+      margin-left: 15px; }
+    #tuo_right .tuo_right8 .span121 {
+      color: #F450A2; }
+  #tuo_right .tuo_right9 {
+    height: 62px;
+    margin-bottom: 10px; }
+    #tuo_right .tuo_right9 #tuo_right9 {
+      width: 225px;
+      height: 55px;
+      background: #F94487;
+      border: none;
+      font-size: 18px;
+      color: white; }
+    #tuo_right .tuo_right9 #tuo_right9_1 {
+      border: 1px solid #ECECEC;
+      width: 100px;
+      height: 55px;
+      background: white;
+      font-size: 18px;
+      color: #AAAAAA;
+      margin-left: 15px; }
+  #tuo_right .tuo_right10 p {
+    height: 25px;
+    padding: 2px 0 5px 0; }
+  #tuo_right .tuo_right10 li {
+    display: inline-block;
+    margin-right: 20px; }
+
+#pingjia .pingjia1 {
+  width: 860px;
+  height: 45px;
+  background: #FF3893;
+  margin-top: 40px; }
+  #pingjia .pingjia1 li {
+    padding: 0 20px;
+    color: white;
+    font-size: 18px;
+    float: left;
+    line-height: 45px; }
+
+#flat {
+  display: none; }
+
+#flat_left {
+  position: fixed;
+  top: 200px;
+  left: 50px;
+  width: 80px;
+  height: 248px;
+  background: white;
+  padding-left: 10px;
+  padding-right: 10px; }
+  #flat_left div {
+    width: 80px;
+    height: 80px;
+    text-align: center;
+    color: mediumvioletred;
+    font-size: 30px; }
+  #flat_left img {
+    margin-top: 10px;
+    width: 80px;
+    height: 80px; }
+  #flat_left span {
+    color: red;
+    font-size: 20px; }
+
+#flat_rght {
+  font-family: iconfont;
+  position: fixed;
+  top: 200px;
+  right: 100px;
+  width: 56px;
+  height: 170px; }
+  #flat_rght span {
+    height: 52px;
+    display: block;
+    border: 1px solid #ECECEC;
+    text-align: center;
+    background: white; }
+    #flat_rght span b {
+      display: block;
+      font-size: 20px;
+      color: red;
+      line-height: 30px; }
+  #flat_rght .flat_span a {
+    position: absolute;
+    left: -80px;
+    display: inline-block;
+    width: 60px;
+    height: 100px;
+    background: whitesmoke;
+    padding: 10px;
+    color: red;
+    display: none; }
+  #flat_rght .flat_span img {
+    width: 60px;
+    height: 60px; }
+  #flat_rght .flat_span:hover a {
+    display: block; }

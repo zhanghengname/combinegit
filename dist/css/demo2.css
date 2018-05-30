@@ -374,7 +374,12 @@ body {
   border-bottom: none;
   border-right: none;
   background: white; }
+  #dazhanshi #zhanshi:hover {
+    box-shadow: #999 2px 2px 2px 2px;
+    z-index: 1;
+    opacity: 1; }
   #dazhanshi #zhanshi {
+    opacity: .9;
     width: 24.9%;
     height: 365px;
     border-bottom: 1px solid #ECECEC;

@@ -20,15 +20,14 @@ oMenu_div.onmouseout=function(){
 var oShuliao=document.getElementById("shuliang");
 var sFlat=document.getElementById("flat_rght");
 var oFlat_span=document.getElementById("flat_span1");
-var Stop=0;
+
 window.onscroll=function(){
-	Stop=document.documentElement.scrollTop||document.body.scrollTop;
+	var Stop=document.documentElement.scrollTop||document.body.scrollTop;
 	
 	if(Stop>400){
 		oShuliao.style.position="fixed";
 		sFlat.style.display="block";
 		//console.log("aa");
-		
 	}else{
 		oShuliao.style.position="relative";
 		sFlat.style.display="none";

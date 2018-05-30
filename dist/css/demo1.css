@@ -82,20 +82,29 @@ header {
     height: 60px;
     float: right;
     padding-top: 26px; }
-    header #center input {
-      float: left; }
-    header #center #shousuo {
-      width: 389px;
-      height: 33px;
-      border: 1px solid red; }
-    header #center #btn {
-      width: 90px;
-      height: 35px;
-      background: #f94487;
-      border: none;
-      margin-left: -6px;
-      color: white;
-      font-size: 12px; }
+    header #center #center_input {
+      position: relative; }
+      header #center #center_input #list {
+        position: absolute;
+        left: 0;
+        top: 35px;
+        z-index: 6; }
+        header #center #center_input #list li {
+          background: white; }
+      header #center #center_input input {
+        float: left; }
+      header #center #center_input #shousuo {
+        width: 389px;
+        height: 33px;
+        border: 1px solid red; }
+      header #center #center_input #btn {
+        width: 90px;
+        height: 35px;
+        background: #f94487;
+        border: none;
+        margin-left: -6px;
+        color: white;
+        font-size: 12px; }
     header #center #gou {
       margin-left: 28px;
       float: left;
@@ -203,32 +212,9 @@ nav menu {
     border-bottom: 1px dashed   #666; }
   nav menu dl:hover .you {
     display: block; }
-  nav menu .you1 {
-    position: absolute;
-    top: 0; }
-  nav menu .you2 {
-    position: absolute;
-    top: 0; }
-  nav menu .you3 {
-    position: absolute;
-    top: 0; }
-  nav menu .you4 {
-    position: absolute;
-    top: 0; }
-  nav menu .you8 {
-    position: absolute;
-    bottom: 0px; }
-  nav menu .you7 {
-    position: absolute;
-    bottom: 0px; }
-  nav menu .you6 {
-    position: absolute;
-    bottom: 0px; }
-  nav menu .you5 {
-    position: absolute;
-    bottom: 0px; }
   nav menu .you {
     position: absolute;
+    top: 0;
     display: none;
     margin-left: 230px;
     background: white;
