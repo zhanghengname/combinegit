@@ -29,7 +29,7 @@
 					<input type="button" name="" id="btn" value="搜索" />
 					<div id="gou">
 						<span class="iconfont">&#xe639;</span>
-						<a href="">购物车</a>
+						<a href="demo5.html">购物车</a>
 						<p>购物车还没有商品 , 快去选购吧</p>
 					</div>
 				</div>
@@ -623,10 +623,9 @@
 			</div>
 		</div>
 	</body>
+	<script type="text/javascript" src="js/common.js"></script>
 	<script type="text/javascript" src="js/liebiao.js"></script>
 	<script type="text/javascript">
-		
-		
 		naifen=[{id:1020,title:"爱他美",price:340,imgUrl:"image/imglibiao/79110c44fc4ada3e1f33ef47af100d4b032773311.jpg"},
 		{id:1021,title:"爱他美",price:220,imgUrl:"image/imglibiao/795249c10658a55d1755884456672d0e239795760.jpg"},
 		{id:1022,title:"白金版婴儿配方奶粉2段6-10m800g*2罐",price:260,imgUrl:"image/imglibiao/1070287_normal_3.jpg"},
@@ -647,15 +646,30 @@
 		{id:10209,title:"白金版婴儿配方奶粉2段6-10m800g*2罐",price:260,imgUrl:"image/imglibiao/1070287_normal_3.jpg"},
 		{id:102001,title:"黄金版婴儿配方奶粉2段6-10m800g*2罐",price:300,imgUrl:"image/imglibiao/79110c44fc4ada3e1f33ef47af100d4b032773311.jpg"},
 		{id:102002,title:"agoahue",price:400,imgUrl:"image/imglibiao/1070287_normal_3.jpg"},
-		{id:102002,title:"agoahue",price:400,imgUrl:"image/imglibiao/1070287_normal_3.jpg"}];//		
+		{id:102002,title:"agoahue",price:400,imgUrl:"image/imglibiao/1070287_normal_3.jpg"},
+		{id:102002,title:"agoahue",price:400,imgUrl:"image/imglibiao/1070287_normal_3.jpg"}];//
 		
 		var oDazhanshi=document.getElementById("dazhanshi");
 		for (var attr in naifen) {
-			oDazhanshi.innerHTML+="<div id='zhanshi'><a href='demo4.html?id="+attr+"'><img src="+naifen[attr].imgUrl+"/><div class='zhanshi_l'>.</div><span class='zhanshi_span'><b>￥<span>"+naifen[attr].price+"</span></b></span><p class='zhanshi_p'>"+naifen[attr].title+"</p></a></div>";
+			oDazhanshi.innerHTML+="<div id='zhanshi'><a href='demo4.html?id="+naifen[attr].id+"'><img src="+naifen[attr].imgUrl+"/><div class='zhanshi_l'>.</div><span class='zhanshi_span'><b>￥<span>"+naifen[attr].price+"</span></b></span><p class='zhanshi_p'>"+naifen[attr].title+"</p></a></div>";
 			
-			console.log(naifen[attr].id);
+			//console.log(naifen[attr].id);
 		};
 		
-		
+		var oBtn=document.getElementById("tuo_right9");
+		var ogou=document.getElementById("gou");
+		var oNum=ogou.children[1];
+		console.log(oNum);
+		if(getCookie("cart") !== undefined) {
+				var obj = JSON.parse(getCookie("cart"));
+			} else {
+				var obj = {};
+			}
+		var sum = 0;
+		for(var b in obj) {
+			sum += obj[b];
+		}
+//console.log(sum);
+		oNum.innerHTML = sum;
 	</script>
 </html>

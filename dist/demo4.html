@@ -28,7 +28,7 @@
 					<input type="button" name="" id="btn" value="搜索" />
 					<div id="gou">
 						<span class="iconfont">&#xe639;</span>
-						<a href="">购物车</a>
+						<a href="demo5.html"></a>
 						<p>购物车还没有商品 , 快去选购吧</p>
 					</div>
 				</div>
@@ -467,15 +467,15 @@
 		<div id="xiang_tuo">
 			<div id="tuox_left">
 				<div id="tuox_left11">
-					
+					<img src="" />
 					<div id="tuox_left111"></div>
 				</div>
 				
 				<div id="tuox_left1">
-					<img src="image/xiangqing/1281798_normal_3.jpg" />
+					<img src="" />
 				</div>
 				<div id="tuox_left2">
-					<img src="image/xiangqing/1281798_normal_3.jpg" />
+					<img src="" />
 				</div>
 			</div>
 			<div id="tuo_right">
@@ -493,13 +493,13 @@
 					<p>特价清仓</p>
 				</div>
 				<div class="tuo_right4">
-					<span>售价</span><i>$1548.00</i><span>？进口税</span>
+					<span>售价</span>￥<b></b><i>$1548.00</i><span>？进口税</span>
 				</div>
 				<div class="tuo_right5">
 					<span class="tuo_rightspan2">套装</span><span>6件套￥222/件</span>
 				</div>
 				<div class="tuo_right6">
-					<span>可选</span><a><img src="image/imglibiao/1001283_normal_3_5aab2504.jpg" style="width: 43px;height: 42px;"></a>
+					<span>可选</span><a><img src="" style="width: 43px;height: 42px;"></a>
 				</div>
 				<div class="tuo_right7">
 					<span>数量</span><input type="text" id="tuo_right7" value="1" />
@@ -508,7 +508,7 @@
 					<span class="span120">评分</span><span></span><span class="span121">12324</span><span>位蜜粉推荐</span>
 				</div>
 				<div class="tuo_right9">
-					<input type="button" name="tuo_right9" id="tuo_right9" value="加入购物车" />
+					<!--<input type="button" name="tuo_right9" id="tuo_right9" value="加入购物车" />-->
 					<input type="button" id="tuo_right9_1" value="收藏" />
 				</div>
 				<div class="tuo_right10">
@@ -526,6 +526,7 @@
 			</ul>
 		</footer>
 	</body>
+	<script type="text/javascript" src="js/common.js"></script>
 	<script type="text/javascript" src="js/xiangqing.js"></script>
 	<script type="text/javascript">
 		
@@ -552,20 +553,81 @@
 		{id:102002,title:"agoahue",price:400,imgUrl:"image/imglibiao/1070287_normal_3.jpg"}];
 		
 		
-		var oTu=document.getElementsByClassName("tuo_right4");
-		
+		var oTu=document.getElementsByClassName("tuo_right4")[0];
+		var ob=oTu.children[1];
+		var oTuu=document.getElementsByClassName("tuo_right6")[0];
+		var oaa=oTuu.children[1];
+		var ooimg=oaa.children[0];
+		//console.log(ooimg);
+		var oTuxx=document.getElementById("tuox_left1");
+		var oTuxxx=document.getElementById("tuox_left2");
 		var str = location.search;
 		var porid=str.split("=")[1];
 		//console.log(porid);
 		var oTux=document.getElementById("tuox_left11");
-		for (var attr in naifen) {
-			console.log(naifen[attr]);
-			if(naifen[attr].id== porid){
-				oTux.innerHTML="<img src='"+naifen[attr].imgUrl+">'";
-				oTu.innerHeight="<b>"+naifen[attr].price+"</b>";
-				//console.log(naifen[attr].id)
-			};
-		}
+		//console.log(oTux);
+		//console.log(str);
+		//oTux.innerHTML="<img src='image/imglibiao/1070287_normal_3.jpg' />";
+		var oimg=oTux.children[0];
+		var oimg1=oTuxx.children[0];
+		var oimg2=oTuxxx.children[0];
+		var oTgit=document.getElementsByClassName("tuo_right9")[0];
 		
+		
+		
+		
+		//console.log(oimg);
+		for (var i=0; i<naifen.length; i++) {
+			//console.log(naifen[attr]);
+			//console.log(naifen[i].id);
+			if(naifen[i].id== porid){
+				oimg.src=naifen[i].imgUrl;
+				oimg1.src=naifen[i].imgUrl;
+				oimg2.src=naifen[i].imgUrl;
+				ob.innerHTML=naifen[i].price;
+				ooimg.src=naifen[i].imgUrl;
+				oTgit.innerHTML="<input type='button' id='tuo_right9' value='添加购物车' data-id="+naifen[i].id+"  />"
+				//console.log(naifen[i].id);
+			};
+		};
+		var oBtn=document.getElementById("tuo_right9");
+		var ogou=document.getElementById("gou");
+		var oNum=ogou.children[1];
+		console.log(oNum);
+		if(getCookie("cart") !== undefined) {
+				var obj = JSON.parse(getCookie("cart"));
+			} else {
+				var obj = {};
+			}
+		var sum = 0;
+		for(var b in obj) {
+			sum += obj[b];
+		}
+//console.log(sum);
+		oNum.innerHTML = sum;
+
+			//for(var i = 0; i < aBtn.length; i++) {}
+				oBtn.onclick = function() {
+					var productId = this.getAttribute("data-id");
+					console.log(productId)
+					if(obj[productId] == undefined) {
+						obj[productId] = 1;
+					} else {
+						obj[productId]++;
+					}
+
+					//console.log(obj);
+					var sum = 0;
+					for(var b in obj) {
+						sum += obj[b];
+					}
+
+					oNum.innerHTML = sum;
+
+					var objToStr = JSON.stringify(obj);
+					
+					setCookie("cart", objToStr, 7);
+				}
+			
 	</script>
 </html>
