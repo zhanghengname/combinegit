@@ -93,6 +93,7 @@ input, li {
     color: white; }
 
 #scetion_gou {
+  position: relative;
   width: 1000px;
   margin: auto; }
   #scetion_gou .scetion_p {
@@ -177,10 +178,15 @@ input, li {
       #scetion_gou #jiesuan div b {
         display: inline-block;
         float: right;
-        margin-right: 30px;
         font-size: 16px; }
+        #scetion_gou #jiesuan div b span {
+          text-align: center; }
       #scetion_gou #jiesuan div b > span:nth-of-type(2) {
         color: red; }
+      #scetion_gou #jiesuan div .egao {
+        background: red;
+        width: 80px;
+        color: white; }
     #scetion_gou #jiesuan div > span {
       font-size: 16px;
       margin-left: 500px; }

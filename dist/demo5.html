@@ -39,6 +39,7 @@
 			<div id="jiesuan">
 				
 			</div>
+			
 		</section>
 		<div id="nowarp_footer">
 			<footer>
@@ -200,13 +201,19 @@
 				oUl.innerHTML +="<li><img src="+naifen[i].imgUrl+"><span class='li_spana'>"+naifen[i].title +"</span><span class='li_spans'>￥"+naifen[i].price +"</span><span>"+obj[attr]+"</span><span class='delBtn' data-id='"+attr+"'>删除</span></li>";
 				sum+=obj[attr]*naifen[i].price;
 				arr+=obj[attr];
-				oDiva.innerHTML="<div><span>共计　"+arr+"　商品</span><b><span>共计：</span><span>￥"+sum+"　</span><span> 结算</span></b></div>";		
+				oDiva.innerHTML="<div><span>共计　"+arr+"　商品</span><b><span>共计：</span><span>￥"+sum+"　</span><span class='egao'> 结算</span></b></div>";		
 				}
 				//console.log(obj[attr]);
 				
 					
 			}
 		}
+		var oEgao=document.getElementsByClassName("egao")[0];
+		oEgao.onclick=function(){
+			alert("穷死了")
+		}
+		
+		console.log(oEgao);
 		var oDspan = document.getElementsByClassName("delBtn");
 			for(var i = 0 ; i < oDspan.length; i++){
 				oDspan[i].onclick = function(){
