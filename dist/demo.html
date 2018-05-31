@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="UTF-8">
 		<script type="text/javascript" src="js/jquery-1.11.0.js"></script>
-		<script type="text/javascript" src="js/demo.js"></script>
+		
 		<link rel="stylesheet" type="text/css" href="css/demo.css"/>
 		<title>登陆</title>
 	</head>
@@ -24,7 +24,7 @@
 				<input type="text" name="shou" id="shou" placeholder="请输入手机号码" />
 				
 				<input type="text"  id="yan" placeholder="请输入密码"/>
-				<input type="button" id="zheng" value="获取验证码" />
+				<input type="button" id="zheng" value="验证密码" />
 				<input type="button" id="deng" value="一键登录"/><!--<a href="demo1.html"></a>-->
 				<div id="box2">
 					<span>请使用以下账号登陆  :</span>
@@ -49,9 +49,11 @@
 		$(function(){
 			$("#deng").click(function(){
 				$.post("http://h6.duchengjiu.top/shop/api_user.php",{"status":"login","username":$("#shou").val(),"password":$("#yan").val},function(data){
-					//console.log(data);
+					console.log(data);
 					if(data.code==0){
 						window.location.href="demo1.html";
+					}else{
+						alert(data.message)
 					}
 				});
 			});
